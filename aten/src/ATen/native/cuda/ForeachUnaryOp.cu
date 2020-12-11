@@ -3,7 +3,6 @@
 #include <ATen/native/cuda/ForeachFunctors.cuh>
 
 namespace at { namespace native {
-
 template <template<class> class Op>
 std::vector<Tensor> floating_complex_half(TensorList tensors) {
     std::vector<std::vector<at::Tensor>> tensor_lists;
